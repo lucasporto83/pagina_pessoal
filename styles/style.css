@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background:rgb(14, 0, 216);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 30px;
+}
+
+#menu{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+#menu ul{ 
+    padding: 1.5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+#menu a{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(14, 0, 216)
+    
+}
+
+#efeitos{
+    background-color: black;
+}
+#efeitos img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+#saudacao{
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top:200px;
+    left:50px;
+    right:50px;
+}
+
+#saudacao h1{
+    margin-left: 3pc;
+    color: #ECECEC;
+}
+
+#saudacao h3{
+    margin-left: 3pc;
+}
+
+span{
+    color: rgb(14, 0, 216);
+}
+
+#saudacao button{
+    margin-left: 3pc;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 3;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(14, 0, 216);
+    color: ghostwhite;
+}
+
+#saudacao button span{
+    color: #ECECEC;
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: black;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+main{
+    width: 70%;
+    margin: auto;
+}
+main h1{
+    color: rgb(14, 0, 216);
+    margin-top: 2%;
+}
+
+
+@keyframes 
+transicao{
+    0%   {color: rgb(14, 0, 216);}
+    50%  {color: white;}
+    100% {color: rgb(14, 0, 216);}
+}
+
+.animacao{
+    animation-name: transicao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#aboutme{
+    display: flex;
+    align-items: center;
+    margin-left: 2;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+p{
+    text-align: center;
+    margin-left: 2pc;
+}
+
+img{
+    border-radius: 50px;
+
+}
+#projects{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+}
+
+h4{
+    color: #ECECEC;
+    font-family: 'Kanit', sans-serif;
+}
+
+.card {
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #212121;
+    border-radius: 1rem;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+  }
+.card:hover {
+    transform: translateY(-1.5rem);
+    border: rgb(14, 0, 216) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+  }
+
+table { 
+    width:100%;
+    margin:0 auto;
+    border-spacing:0;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+ 
+caption {
+    font-size:130%;
+    font-weight:bold;
+    padding:5px 0;
+    background-color:#ECECEC;
+    border:1px solid #ccc;
+    border-bottom:none;
+}
+ 
+tr, td, th {
+    border:thin solid #ccc;
+    border-bottom:none;
+    border-right:none;
+    padding:5px;
+}
+ 
+td { 
+    text-align:center;
+}
+
+footer{
+    padding: 1.5%;
+    color: white;
+    background-color: #152238;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+}
