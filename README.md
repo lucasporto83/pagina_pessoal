@@ -3,4 +3,4 @@ Projeto de página pessoal "about me" de HTML/CSS - Curso Análise e Desenvolvim
 
 #Ferramentas necessárias: 
 - VScode;
-- Navegadore (Google Chrome, Microsft Egde;
+- Navegadore (Google Chrome, Microsft Egde);
